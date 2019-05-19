@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Scheduler</string>
+    <string name="splash_png">splash</string>
+    <string name="string_Test">이미지 업로드 실패</string>
+    <string name="string_monthly">Monthly</string>
+    <string name="string_weekly">Weekly</string>
+    <string name="string_daily">Daily</string>
+
+    <string name="string_sun">일</string>
+    <string name="string_mon">월</string>
+    <string name="string_tue">화</string>
+    <string name="string_wed">수</string>
+    <string name="string_thu">목</string>
+    <string name="string_fri">금</string>
+    <string name="string_sat">토</string>
+
+</resources>

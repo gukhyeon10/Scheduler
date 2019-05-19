@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+            android:id="@+id/calendarWeekView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mcv_showOtherDates="all"
+            app:mcv_selectionColor="#1E90FF"
+            app:mcv_calendarMode="week"
+            >
+
+        </com.prolificinteractive.materialcalendarview.MaterialCalendarView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/calendarWeekView">
+
+
+                <ListView
+                    android:id="@+id/weekly_Sun"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:divider="@color/design_default_color_primary">
+
+                </ListView>
+
+
+
+                <ListView
+                    android:id="@+id/weekly_Mon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:divider="@color/design_default_color_primary">
+
+                </ListView>
+
+                <ListView
+                    android:id="@+id/weekly_Tue"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:divider="@color/design_default_color_primary">
+
+                </ListView>
+
+                <ListView
+                    android:id="@+id/weekly_Wed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:divider="@color/design_default_color_primary">
+
+                </ListView>
+                <ListView
+                    android:id="@+id/weekly_Thu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:divider="@color/design_default_color_primary">
+
+                </ListView>
+
+                <ListView
+                    android:id="@+id/weekly_Fri"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:divider="@color/design_default_color_primary">
+
+                </ListView>
+
+                <ListView
+                    android:id="@+id/weekly_Sat"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:divider="@color/design_default_color_primary">
+
+                </ListView>
+        </LinearLayout>
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/weeklyEditButton"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            app:fabSize="normal"
+            android:elevation="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_input_add"
+            android:backgroundTint="#FFFF"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            />
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
