@@ -18,7 +18,9 @@
         android:gravity="center"
         android:text="TITLE"
         android:textStyle="bold"
-        android:alpha="1"/>
+        android:alpha="1"
+        android:maxLines="2"
+        android:ellipsize="end"/>
 
 
 </android.support.constraint.ConstraintLayout>

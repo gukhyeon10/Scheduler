@@ -1,29 +1,18 @@
 package com.example.guk.scheduler.Adapter;
 
-
 import android.content.Context;
-import android.content.Intent;
-import android.graphics.Paint;
-import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.ArrayAdapter;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.guk.scheduler.R;
 import com.example.guk.scheduler.ScheduleInfo;
 
 import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
-import static android.content.Intent.ACTION_VIEW;
-import static android.net.Uri.parse;
 
 /** 리스트뷰 커스텀 어댑터 */
 public class ListViewCustomAdapter extends ArrayAdapter<ScheduleInfo> {
@@ -69,6 +58,8 @@ public class ListViewCustomAdapter extends ArrayAdapter<ScheduleInfo> {
 
             LinearLayout bgColor = convertView.findViewById(R.id.daily_item_color);
             bgColor.setBackgroundColor(scheduleInfo.getColor());
+
+            convertView.setLayoutParams(new AbsListView.LayoutParams(ViewGroup.LayoutParams.FILL_PARENT, 240));
         }
 
 
